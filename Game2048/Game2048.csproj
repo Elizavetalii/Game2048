@@ -18,6 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SerDeserLib\SerDeserLib.csproj" />
+    <ProjectReference Include="..\WpfCustomlLib\WpfCustomlLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Pictures\Images\arrows.jpg" />
     <Resource Include="Pictures\Images\home.jpg" />
   </ItemGroup>

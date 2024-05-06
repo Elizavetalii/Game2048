@@ -8,6 +8,6 @@
         Title="Game2048"
         Height="600" Width="600"
         MinHeight="600" MinWidth="600" 
-        Background="{StaticResource BackgroundColor}">
+        Background="{DynamicResource BackgroundColor}">
     <Frame Source="../Page/MenuPage.xaml" NavigationUIVisibility="Hidden" />
 </Window>

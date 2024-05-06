@@ -6,28 +6,32 @@
       xmlns:local="clr-namespace:Game2048.View.Page"
       xmlns:vm="clr-namespace:Game2048.ViewModel"
       mc:Ignorable="d">
-    
+
     <Page.DataContext>
         <vm:MenuViewModel/>
     </Page.DataContext>
 
     <Grid>
         <StackPanel VerticalAlignment="Center" Orientation="Vertical" Margin="10">
-            <Label Style="{StaticResource MenuLabelStyle}" Content="2048" />
+            <Button x:Name ="Themes" Content="To Light" 
+                    Style="{DynamicResource MenuButtonStyle}" Click="Button_Click" />
+            
+            <Label Style="{DynamicResource MenuLabelStyle}" Content="2048" />
             
             <Button Content="Start Game" 
-                    Style="{StaticResource MenuButtonStyle}" 
+                    Style="{DynamicResource MenuButtonStyle}" 
                     Command="{Binding NavigateToGamePage}"
                     CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Page}}}"/>
-            
+
             <Button Content="Statistics"
-                    Style="{StaticResource MenuButtonStyle}"
+                    Style="{DynamicResource MenuButtonStyle}"
                     Command="{Binding NavigateToStatisticsPage}" 
                     CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Page}}}"/>
-            
+
             <Button Content="End Game" 
-                    Style="{StaticResource MenuButtonStyle}"
+                    Style="{DynamicResource MenuButtonStyle}"
                     Command="{Binding EndGameCommand}"/>
-         </StackPanel>
+
+        </StackPanel>
     </Grid>
 </Page>

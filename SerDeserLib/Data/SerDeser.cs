@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 
 namespace Game2048.Data
 {
-    class SerDeser
+    public class SerDeser
     {
         public static void WriteToJsonFile<T>(string filePath, ObservableCollection <T> players)
         {
@@ -46,16 +46,16 @@ namespace Game2048.Data
             {
                 if (jsonString != "")
                 {
-                    ShowReadErorMessage();
+                   // ShowReadErorMessage();
                     File.WriteAllText(filePath, "");
                 }
                 return new ObservableCollection<T> { };
             }
         }
 
-        private static void ShowReadErorMessage()
-        {
-            MessageBox.Show("Error reading statistics from file!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);    
-        }
+        //private static void ShowReadErorMessage()
+        //{
+        //    MessageBox.Show("Error reading statistics from file!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);    
+        //}
     }
 }

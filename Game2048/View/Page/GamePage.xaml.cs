@@ -3,7 +3,7 @@
 namespace Game2048.View.Page
 {
     public partial class GamePage
-    {
+    {      
         public GamePage()
         {
             InitializeComponent();

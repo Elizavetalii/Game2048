@@ -6,6 +6,7 @@ namespace Game2048.ViewModel
 {
     public class MenuViewModel : ViewModelBase
     {
+        static bool isDark = true;
         public NavigationCommand NavigateToGamePage 
         { 
             get => new(NavigateToPage, new Uri("View/Page/GamePage.xaml", UriKind.RelativeOrAbsolute)); 

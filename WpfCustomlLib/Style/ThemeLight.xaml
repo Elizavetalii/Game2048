@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="TextColor" Color="#1c1c1c"/>
+    <SolidColorBrush x:Key="ButtonBackgroundColor" Color="#e3a3c0"/>
+    <SolidColorBrush x:Key="ButtonBorderColor" Color="#f5589f"/>
+    <SolidColorBrush x:Key="ActiveButtonBackgroundColor" Color="#82013c"/>
+
+    <SolidColorBrush x:Key="BackgroundColor" Color="#a2e4f5"/>
+
+    <SolidColorBrush x:Key="BoardBackgroundColor" Color="#a2e4f5"/>
+    <SolidColorBrush x:Key="CellBackgroundColor" Color="#058aab"/>
+
+    <SolidColorBrush x:Key="TableHeaderBackgroundColor" Color="#04596e"/>
+    <SolidColorBrush x:Key="TableRowBackground1Color" Color="#9eb5ba"/>
+    <SolidColorBrush x:Key="TableRowBackground2Color" Color="#8cb1ba"/>
+
+
+    <SolidColorBrush x:Key="tile2Brush"   Color="#f7a3d6"/>
+    <SolidColorBrush x:Key="tile4Brush"  Color="#732e67"/>
+    <SolidColorBrush x:Key="tile8Brush"  Color="#e01678"/>
+    <SolidColorBrush x:Key="tile16Brush"  Color="#b97fc7"/>
+    <SolidColorBrush x:Key="tile32Brush"  Color="#8916e0"/>
+    <SolidColorBrush x:Key="tile64Brush" Color="#a13074"/>
+    <SolidColorBrush x:Key="tile128Brush" Color="#a676d6"/>
+    <SolidColorBrush x:Key="tile256Brush" Color="#4a0fa8"/>
+    <SolidColorBrush x:Key="tile512Brush" Color="#180438"/>
+    <SolidColorBrush x:Key="tile1024Brush"  Color="#4f0516"/>
+    <SolidColorBrush x:Key="tile2048Brush"  Color="#800000"/>
+    <SolidColorBrush x:Key="tileEmptyBrush"  Color="#f5ebed"/>
+</ResourceDictionary>

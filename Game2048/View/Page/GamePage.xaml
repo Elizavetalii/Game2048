@@ -16,9 +16,10 @@
     <Page.Resources>
         <cnv:IntArrayToObservableCollectionConverter x:Key="IntArrayToObservableCollectionConverter"/>
         <cnv:ValueToColorConverter x:Key="ValueToColorConverter"/>
+        
         <DataTemplate x:Key="CellTemplate">
-            <Border Style="{StaticResource CellBorderStyle}" Background="{Binding Converter={StaticResource ValueToColorConverter}}">
-                <TextBlock Style="{StaticResource CellLabelStyle}" TextAlignment="Center" Text="{Binding}"/>
+            <Border Style="{DynamicResource CellBorderStyle}" Background="{Binding Converter={StaticResource ValueToColorConverter}}">
+                <TextBlock Style="{DynamicResource CellLabelStyle}" TextAlignment="Center" Text="{Binding}"/>
             </Border>
         </DataTemplate>
         
@@ -68,13 +69,13 @@
             </Grid.ColumnDefinitions>
 
 
-            <Button Style="{StaticResource SmallButtonStyle}" Grid.Row="1" Grid.Column="0"
+            <Button Style="{DynamicResource SmallButtonStyle}" Grid.Row="1" Grid.Column="0"
                     Command="{Binding NavigateToMenuPage}"
                     CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Page}}}">
                 <Image Source="../../Pictures/Images/home.jpg"/>
             </Button>
 
-            <Button Style="{StaticResource SmallButtonStyle}" Grid.Row="1" Grid.Column="1"
+            <Button Style="{DynamicResource SmallButtonStyle}" Grid.Row="1" Grid.Column="1"
                     Command="{Binding ResetCommand}">
                 <Button.Background>
                     <ImageBrush Stretch="Uniform"/>
@@ -83,12 +84,12 @@
             </Button>
 
 
-            <Border Style="{StaticResource InfoTabStyle}" Grid.Row="1" Grid.Column="3">
-                <TextBlock Style="{StaticResource InfoTabLabelStyle}"
+            <Border Style="{DynamicResource InfoTabStyle}" Grid.Row="1" Grid.Column="3">
+                <TextBlock Style="{DynamicResource InfoTabLabelStyle}"
                     Text="{Binding Score, StringFormat='Score: {0}'}"></TextBlock>
             </Border>
         </Grid>
-        <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource BoardBorderStyle}">
+        <Border Grid.Row="1" Grid.Column="1" Style="{DynamicResource BoardBorderStyle}">
             <ItemsControl ItemsSource="{Binding Board, Converter={StaticResource IntArrayToObservableCollectionConverter}}" ItemTemplate="{DynamicResource BoardTemplate}"/>
         </Border>            
     </Grid>
