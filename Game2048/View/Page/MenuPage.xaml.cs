@@ -8,6 +8,10 @@ namespace Game2048.View.Page
         public MenuPage()
         {
             InitializeComponent();
+            if(App.Theme == "ThemeLight")
+            {
+                Themes.Content = "To Dark";
+            }
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)

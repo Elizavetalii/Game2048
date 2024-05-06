@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Game2048.Converter;
+using System.Windows;
 
 namespace Game2048.View.Page
 {
@@ -7,6 +8,7 @@ namespace Game2048.View.Page
         public GamePage()
         {
             InitializeComponent();
+            ValueToColorConverter valueToColorConverter = new ValueToColorConverter();
             Loaded += MainWindow_Loaded;
         }
 
